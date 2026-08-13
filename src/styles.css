@@ -73,6 +73,9 @@ text-align: center;
 text-decoration: none;
 }
 
+main {
+    background-color: white;
+}
 footer {
     background-image: linear-gradient(rgba(2,4,3,0.9),rgba(2,4,3,0.9)),url('../images/nicki-footer.jpg');
     background-repeat: no-repeat;
