@@ -5,11 +5,36 @@ margin: 0;
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
     gap: 64px;
+}
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    max-width: 100%;
+    gap: 0;
+}
+.grid-2-columns img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-height: 500px;
+    object-fit: cover;
+}
+.grid-2-columns > div:last-child {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.text-box {
+    margin-bottom: 16px;
 }
 
 header {
@@ -76,12 +101,45 @@ text-decoration: none;
 main {
     background-color: white;
 }
+main h2 {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 0;
+}
+main h3 {
+    display: inline-block;
+    background-color: #DCF3FB;   
+    color: #3FA9D9;              
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    width: fit-content;
+    margin-bottom: 24px;
+}
+main p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    opacity: 0.7;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 footer {
     background-image: linear-gradient(rgba(2,4,3,0.9),rgba(2,4,3,0.9)),url('../images/nicki-footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 100px 0;
 }
 footer h3 {
     font-weight: 700;
@@ -126,5 +184,12 @@ font-size: 20px;
 }
 header h3 {
 font-size: 12px;
+}
+.grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+section {
+    padding: 30px;
 }
 }
