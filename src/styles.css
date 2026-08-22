@@ -53,7 +53,18 @@ section.secondary {
 .text-center {
     text-align: center;
 }
-
+.learn-more-btn {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 16px;
+    border-radius: 100px;
+    padding: 16px 32px;
+    background-color: #885DF1;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
 header {
 display: flex;
 flex-direction: column;
@@ -215,6 +226,10 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.last-section {
+    background-color: rgba(30, 27, 44, 1);
 }
 
 footer {
